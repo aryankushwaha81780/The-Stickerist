@@ -1,0 +1,19 @@
+{
+  "name": "the-stickerist",
+  "version": "1.0.0",
+  "description": "Personal WhatsApp bot that converts Instagram post images into stickers",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "aepvoid",
+  "license": "MIT",
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.6.0",
+    "fs-extra": "^11.3.5",
+    "pino": "^9.2.0",
+    "puppeteer-core": "^24.43.1",
+    "qrcode-terminal": "^0.12.0",
+    "sharp": "^0.33.5"
+  }
+}
