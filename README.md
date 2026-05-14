@@ -19,7 +19,7 @@
 - **Chromium-based Browser**: Chrome, Brave, Chromium, or Microsoft Edge installed on the system.
 - **Instagram Cookies**: (recommended) A `cookies.txt` file containing your Instagram login cookies to avoid rate limits or login walls.
 
-## Installation
+## Installation (Linux)
 
 1. Clone the repository:
    ```bash
@@ -29,9 +29,30 @@
 
 2. Install dependencies:
    ```bash
-   npm install
+   npm install --legacy-peer-deps
    ```
-3. and if the error says **"'git' is not recognized"**. why are you even on this platform...
+   **Note:** and if the error says **"'git' is not recognized"**. why are you even using github...
+
+## Installation (Windows in admin cmd)
+
+1. Install cocolatey:
+   ```bash
+   @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"   
+   ```
+
+2. Install nodejs and clone the repo:
+   ```bash
+   choco install -y nodejs   
+   # if you want to manage multiple versions run "choco install nvm"
+
+   git clone https://github.com/aryankushwaha81780/The-Stickerist
+   cd ./The-Stickerist/
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install --legacy-peer-deps
+   ```
 
 ## Installation (Termux)
 
