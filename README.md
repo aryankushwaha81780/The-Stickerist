@@ -95,6 +95,7 @@ To enable authenticated scraping (highly recommended to avoid "Login required" b
     ```
 
 ## Output
+   ![cmdline output](images/cmd-output.png)
    ![this is the actual result](images/output.png)
 
 ## Contributing
