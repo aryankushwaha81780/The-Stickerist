@@ -24,7 +24,7 @@
 1. Clone the repository:
    ```bash
    git clone https://github.com/aryankushwaha81780/The-Stickerist
-   cd the-stickerist
+   cd The-Stickerist
    ```
 
 2. Install dependencies:
@@ -33,6 +33,44 @@
    ```
 3. and if the error says **"'git' is not recognized"**. why are you even on this platform...
 
+## Installation (Termux)
+
+1. install the packages:
+   ```bash
+   pkg install nodejs git python make g++
+   pkg install tur-repo
+   ```
+Note: if 'g++' is showing error then use "clang"
+
+2. Install chromium:
+   
+   Chromium has some prerequisites to be installed first: "gtk3", "libevdev" and "libxkbcommon". but these are not standalone packages, they are provided by x11-repo.
+
+   ```bash
+   termux change repo
+   # select single mirror -> mirrors.tuna.tsinghua.edu.cn (by Tsinghua university TUNA Association)
+
+   pkg update -y
+   pkg install x11-repo -y
+   pkg install chromium
+   ```
+
+3. Clone the repository:
+   ```bash
+   git clone https://github.com/aryankushwaha81780/The-Stickerist
+   cd The-Stickerist
+   ```
+
+4. install dependencies: 
+   ```bash
+   npm install --legacy-peer-deps
+   ```
+
+5. At Startup(Only one time): 
+   ```bash
+   pkg install pkg-config glib xorgproto -y 
+   npm install sharp --build-from-source
+   ```
 
 ## Configuration
 
